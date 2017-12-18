@@ -2,3 +2,9 @@
 ---
 
 @import "{{ site.theme }}";
+
+a:after {
+  @media print {
+    content:  ' <' attr(href) '>';  
+  }
+}
